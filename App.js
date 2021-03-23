@@ -1,18 +1,10 @@
 import React, {Component} from 'react';
 import { Button, StyleSheet, Text, View,Image,FlatList, TextInput } from 'react-native';
+import api from './src/apiGit';
 
 class App extends Component{
-  constructor(props){
-    super(props);
-    this.state = {
-      nome: 'Eduardo do Espirito Santo'
-    };
-  }
-  
-  gitNome(){
-    this.setState({nome: texto});
-  }
 
+   
   render(){
     
     var img = 'https://scontent.fsdu8-2.fna.fbcdn.net/v/t1.0-1/57349685_2391572707589789_2176599257069387776_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=dbb9e7&_nc_ohc=K1jx9ymputMAX8SLVG5&_nc_ht=scontent.fsdu8-2.fna&oh=8bd1f01f4547e64041be4f74b3683bff&oe=607DF765'
@@ -39,9 +31,9 @@ class App extends Component{
         >
           Digite o nome do programador que está procurando:
         </Text>
+
         <TextInput
         style={styles.input}
-        onChangeText={this.gitNome}
         >
 
         </TextInput>
@@ -57,7 +49,7 @@ class App extends Component{
 const styles = StyleSheet.create({
   container: {
     flex:1,
-    margin:5,
+    margin:10,
     backgroundColor:'#ea80fc'
     
   },
